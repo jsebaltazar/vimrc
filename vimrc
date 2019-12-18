@@ -1,3 +1,4 @@
+
 set encoding=utf-8
 set nu
 set cursorline
@@ -13,6 +14,8 @@ Plugin 'gmarik/Vundle.vim'
 call vundle#end()
 filetype plugin indent on 
 
+Plugin 'jsebaltazar/vim-luntian'
+colorscheme luntian
 
 " Enable folding
 setlocal foldmethod=indent
@@ -56,7 +59,13 @@ Plugin 'mattn/emmet-vim'
 
 Bundle 'Valloric/YouCompleteMe'
 
-
-
 let g:ycm_autoclose_preview_window_after_completion=1
 map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
+
+Plugin 'dracula/vim', { 'name': 'dracula' }
+
+Plugin 'ap/vim-css-color'
+
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+let g:airline#extensions#tabline#enabled = 1
